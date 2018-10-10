@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\as_workspace\yh\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\18.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8f11f56e350eacabf2273f646d981356eea0ed77">
+        <dex dex="D:\as_workspace\yh\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-18.0.0_410b4c8f8b8e9324278f2f20c0b3a31703c38c97.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\developTool\Androidsdk\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="D:\as_workspace\yh\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0_ec0f68aa1466d3ba1f4735f4062851e1af34daac.jar" />
+    </item>
+
+</items>

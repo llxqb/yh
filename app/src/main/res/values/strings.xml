@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="Disarm_Bombs">扫雷</string>
+    <string name="time">时间</string>
+    <string name="bomb">炸弹</string>
+    <string name="restart">重来</string>
+    <string name="b_ok">好吧</string>
+    <string name="title_activity_love">LoveActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_friend">FriendActivity</string>
+    <string name="title_activity_family">FamilyActivity</string>
+    <string name="title_activity_friend_text">Friend_textActivity</string>
+    <string name="title_activity_family_text">Family_textActivity</string>
+    <string name="title_activity_love_text">Love_textActivity</string>
+
+</resources>

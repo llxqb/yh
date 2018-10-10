@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical"
+    tools:context="ll.to.syy.MainActivity"
+     >
+
+    <LinearLayout
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/BLACK"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/b_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/bg_b_back" />
+
+        <CheckBox
+            android:id="@+id/cb_mark"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_cb_mark"
+            android:button="@null" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/time"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:background="@color/WHITE"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/BLACK"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bomb_nomal"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_bomb"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@color/WHITE"
+            android:gravity="center"
+            android:textColor="@color/BLACK"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_level"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_tv_level"
+            android:clickable="true"
+            android:gravity="center"
+            android:textColor="@color/BLACK"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/b_restart"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_b_restart"
+            android:gravity="center"
+            android:text="@string/restart"
+            android:textColor="@color/BLACK"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/b_more"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_cb_more" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gl"
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/BLACK"
+        android:layout_gravity="center"
+        android:columnCount="10"
+        android:rowCount="15"
+        tools:targetApi="14" />
+
+</LinearLayout>
