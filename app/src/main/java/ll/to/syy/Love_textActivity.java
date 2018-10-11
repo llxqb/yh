@@ -25,11 +25,11 @@ public class Love_textActivity extends Activity {
 		setContentView(R.layout.activity_love_text);
 		setupViews();
 		
-		myHandler.postDelayed(runnable, 1000 * 12);
+		myHandler.postDelayed(runnable, 1000 * 10);
 	}
 
 	protected void setupViews() {
-		String text = "我能想到最浪漫的事就是和你一起慢慢变老....(省略了一万句话)";
+		String text = "happy every day , smile every day";
 		flyTxtView = (FlyTxtView) findViewById(R.id.love_fly_txt);
 		flyTxtView.setTextSize(20);
 		flyTxtView.setTextColor(Color.RED);

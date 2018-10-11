@@ -4,17 +4,16 @@
     android:layout_height="match_parent"
     android:background="@color/WHITE"
     android:orientation="vertical"
-    tools:context="ll.to.syy.MainActivity"
-     >
+    tools:context="ll.to.syy.MainActivity">
 
     <LinearLayout
         android:id="@+id/l"
         android:layout_width="match_parent"
         android:layout_height="30dp"
+        android:layout_gravity="center"
         android:background="@color/BLACK"
         android:gravity="center"
-        android:layout_gravity="center"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/b_back"
@@ -98,9 +97,9 @@
         android:id="@+id/gl"
         android:layout_width="300dp"
         android:layout_height="450dp"
-        android:layout_marginTop="15dp"
-        android:background="@color/BLACK"
         android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@color/BLACK"
         android:columnCount="10"
         android:rowCount="15"
         tools:targetApi="14" />

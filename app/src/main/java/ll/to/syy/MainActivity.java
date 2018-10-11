@@ -12,6 +12,7 @@ import com.yh.HolderSurfaceView;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -269,12 +270,12 @@ public class MainActivity extends Activity implements OnClickListener,
                 startActivity(new Intent(MainActivity.this, FriendActivity.class));
             } else if (level % 3 == 1) {
                 message = "你的分数为："
-                        + (int) (Math.pow(BOMBS[level % 3], 2) / Math.sqrt(time)) + "  果然你就是天选少年";
+                        + (int) (Math.pow(BOMBS[level % 3], 2) / Math.sqrt(time)) + "  ~(~▽~)~相当的厉害";
                 startActivity(new Intent(MainActivity.this, FamilyActivity.class));
 
             } else if (level % 3 == 2) {
                 message = "你的分数为："
-                        + (int) (Math.pow(BOMBS[level % 3], 2) / Math.sqrt(time)) + "   洋洋得意";
+                        + (int) (Math.pow(BOMBS[level % 3], 2) / Math.sqrt(time)) + "  ^_^  洋洋得意";
                 startActivity(new Intent(MainActivity.this, Love_textActivity.class));
             }
 //			for (int i = 0; i < civs.length; i++)
@@ -494,4 +495,8 @@ public class MainActivity extends Activity implements OnClickListener,
         return false;
     }
 
+    public static void start(Context context){
+        Intent intent = new Intent(context,MainActivity.class);
+        context.startActivity(intent);
+    }
 }

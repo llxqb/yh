@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ll.to.syy.test">
 
-    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="21" />
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="27" />
 
-    <application>
+    <application android:debuggable="true" >
         <uses-library android:name="android.test.runner" />
     </application>
 

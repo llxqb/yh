@@ -7,24 +7,26 @@
     android:orientation="vertical"
     tools:context="ll.to.syy.WelcomeActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="刷新一下试试^_^" />
+
     <com.yalantis.phoenix.PullToRefreshView
         android:id="@+id/pull_to_refresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ListView
-            android:id="@+id/list_view"
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:divider="@null"
             android:dividerHeight="0dp"
-            />
+            android:fadingEdge="none" />
 
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:gravity="center"-->
-            <!--android:text="刷新一下试试" />-->
 
     </com.yalantis.phoenix.PullToRefreshView>
 </LinearLayout>

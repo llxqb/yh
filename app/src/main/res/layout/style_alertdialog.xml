@@ -11,10 +11,10 @@
         android:id="@+id/tv_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/TRANSPARENT"
+        android:background="#333333"
         android:gravity="center"
         android:textColor="@color/WHITE"
-        android:textSize="30sp" />
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/b_ok"

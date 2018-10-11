@@ -5,56 +5,51 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="21" />
+        android:minSdkVersion="19"
+        android:targetSdkVersion="27" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <!-- android:screenOrientation="portrait" -->
     <application
         android:allowBackup="true"
+        android:debuggable="true"
         android:icon="@drawable/bomb_nomal"
         android:label="@string/Disarm_Bombs"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="ll.to.syy.MainActivity"
-            android:label="@string/Disarm_Bombs" >
+            android:label="@string/Disarm_Bombs" />
+        <activity
+            android:name="ll.to.syy.LoveActivity"
+            android:label="@string/title_activity_love" />
+        <activity
+            android:name="ll.to.syy.FriendActivity"
+            android:label="@string/title_activity_friend" />
+        <activity
+            android:name="ll.to.syy.FamilyActivity"
+            android:label="@string/title_activity_family" />
+        <activity
+            android:name="ll.to.syy.Friend_textActivity"
+            android:label="@string/title_activity_friend_text"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="ll.to.syy.Family_textActivity"
+            android:label="@string/title_activity_family_text"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="ll.to.syy.Love_textActivity"
+            android:label="@string/title_activity_love_text"
+            android:launchMode="singleInstance" />
+        <activity android:name="ll.to.syy.WelcomeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name="ll.to.syy.LoveActivity"
-            android:label="@string/title_activity_love"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="ll.to.syy.FriendActivity"
-            android:label="@string/title_activity_friend"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="ll.to.syy.FamilyActivity"
-            android:label="@string/title_activity_family"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="ll.to.syy.Friend_textActivity"
-            android:label="@string/title_activity_friend_text"
-            android:launchMode="singleInstance"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="ll.to.syy.Family_textActivity"
-            android:label="@string/title_activity_family_text"
-            android:launchMode="singleInstance"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
-        </activity>
-        <activity
-            android:name="ll.to.syy.Love_textActivity"
-            android:label="@string/title_activity_love_text"
-            android:launchMode="singleInstance"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
         </activity>
     </application>
 
