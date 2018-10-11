@@ -25,11 +25,11 @@ public class Love_textActivity extends Activity {
 		setContentView(R.layout.activity_love_text);
 		setupViews();
 		
-		myHandler.postDelayed(runnable, 1000 * 10);
+		myHandler.postDelayed(runnable, 1000 * 12);
 	}
 
 	protected void setupViews() {
-		String text = "happy every day , smile every day";
+		String text = "happy every day , smile     every day";
 		flyTxtView = (FlyTxtView) findViewById(R.id.love_fly_txt);
 		flyTxtView.setTextSize(20);
 		flyTxtView.setTextColor(Color.RED);

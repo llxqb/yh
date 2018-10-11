@@ -262,29 +262,30 @@ public class MainActivity extends Activity implements OnClickListener,
                 for (int j = 0; j < civs[i].length; j++)
                     if (bombs[i][j])
                         civs[i][j].setImageDrawable(12);
-        } else {
+
             if (level % 3 == 0) {
                 message = "你的分数为："
-                        + (int) (Math.pow(BOMBS[level % 3], 2) / Math.sqrt(time)) + "  蛮厉害的嘛";
+                        + (int) (Math.pow(BOMBS[level % 3], 2) / Math.sqrt(time)) + "\n  蛮厉害的嘛";
 //				SystemClock.sleep(1000);
                 startActivity(new Intent(MainActivity.this, FriendActivity.class));
             } else if (level % 3 == 1) {
                 message = "你的分数为："
-                        + (int) (Math.pow(BOMBS[level % 3], 2) / Math.sqrt(time)) + "  ~(~▽~)~相当的厉害";
+                        + (int) (Math.pow(BOMBS[level % 3], 2) / Math.sqrt(time)) + "\n  ~(~▽~)~相当的厉害";
                 startActivity(new Intent(MainActivity.this, FamilyActivity.class));
 
             } else if (level % 3 == 2) {
                 message = "你的分数为："
-                        + (int) (Math.pow(BOMBS[level % 3], 2) / Math.sqrt(time)) + "  ^_^  洋洋得意";
+                        + (int) (Math.pow(BOMBS[level % 3], 2) / Math.sqrt(time)) + "\n  ^_^  洋洋得意";
                 startActivity(new Intent(MainActivity.this, Love_textActivity.class));
             }
-//			for (int i = 0; i < civs.length; i++)
-//				for (int j = 0; j < civs[i].length; j++)
-//					if (bombs[i][j])
-//						civs[i][j].setImageDrawable(14);
-//					else if (marks[i][j])
-//						civs[i][j].setImageDrawable(15);
-//			message = "Game Over!";
+        } else {
+			for (int i = 0; i < civs.length; i++)
+				for (int j = 0; j < civs[i].length; j++)
+					if (bombs[i][j])
+						civs[i][j].setImageDrawable(14);
+					else if (marks[i][j])
+						civs[i][j].setImageDrawable(15);
+			message = "Game Over!";
 
         }
         ad = new AlertDialog.Builder(MainActivity.this).create();

@@ -94,7 +94,7 @@ public class WelcomeActivity extends Activity {
             text = "夜深了，早点休息";
             type = 1;
         } else if (Integer.parseInt(currentHour) >= 0 && Integer.parseInt(currentHour) < 4) {
-            text = "夜很深了，早点休息";
+            text = "夜很深了，记得早点休息";
             type = 1;
         }
 //        "现在时间是" + currentData + "\n" +

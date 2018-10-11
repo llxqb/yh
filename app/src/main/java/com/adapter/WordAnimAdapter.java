@@ -1,5 +1,6 @@
 package com.adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.SystemClock;
 import android.support.annotation.NonNull;
@@ -122,6 +123,7 @@ public class WordAnimAdapter extends RecyclerView.Adapter<WordAnimAdapter.MyHold
                         @Override
                         public void run() {
                             MainActivity.start(mContext);
+                            ((Activity)mContext).finish();
                         }
                     }, 1400);
                 }
