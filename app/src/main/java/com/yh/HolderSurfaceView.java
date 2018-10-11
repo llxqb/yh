@@ -11,7 +11,6 @@ import android.view.SurfaceView;
  */
 public class HolderSurfaceView {
 	private HolderSurfaceView() {
-
 	}
 
 	private static HolderSurfaceView mHolderSurfaceView = null;

@@ -7,7 +7,7 @@ import android.media.AudioManager;
 import android.media.SoundPool;
 
 /**
- * ¶àÒôĞ§
+ * å¤šéŸ³æ•ˆ
  * @author gary
  *
  */
@@ -19,44 +19,44 @@ public class GameSoundPool {
 		initSounds();
 	}
 
-	// ÒôĞ§µÄÒôÁ¿
+	// éŸ³æ•ˆçš„éŸ³é‡
 	int streamVolume;
 
-	// ¶¨ÒåSoundPool¶ÔÏó
+	// å®šä¹‰SoundPoolå¯¹è±¡
 	private SoundPool soundPool;
 
-	// ¶¨ÒåHASH±í
+	// å®šä¹‰HASHè¡¨
 	private HashMap<Integer, Integer> soundPoolMap;
 
 	/***************************************************************
-	 * Function:initSounds(); Parameters:null Returns:None. Description:³õÊ¼»¯ÉùÒôÏµÍ³
+	 * Function:initSounds(); Parameters:null Returns:None. Description:åˆå§‹åŒ–å£°éŸ³ç³»ç»Ÿ
 	 * Notes:none.
 	 ***************************************************************/
 	public void initSounds() {
-		// ³õÊ¼»¯soundPool¶ÔÏó,µÚÒ»¸ö²ÎÊıÊÇÔÊĞíÓĞ¶àÉÙ¸öÉùÒôÁ÷Í¬Ê±²¥·Å,µÚ2¸ö²ÎÊıÊÇÉùÒôÀàĞÍ,µÚÈı¸ö²ÎÊıÊÇÉùÒôµÄÆ·ÖÊ
+		// åˆå§‹åŒ–soundPoolå¯¹è±¡,ç¬¬ä¸€ä¸ªå‚æ•°æ˜¯å…è®¸æœ‰å¤šå°‘ä¸ªå£°éŸ³æµåŒæ—¶æ’­æ”¾,ç¬¬2ä¸ªå‚æ•°æ˜¯å£°éŸ³ç±»å‹,ç¬¬ä¸‰ä¸ªå‚æ•°æ˜¯å£°éŸ³çš„å“è´¨
 		soundPool = new SoundPool(100, AudioManager.STREAM_MUSIC, 100);
 
-		// ³õÊ¼»¯HASH±í
+		// åˆå§‹åŒ–HASHè¡¨
 		soundPoolMap = new HashMap<Integer, Integer>();
 
-		// »ñµÃÉùÒôÉè±¸ºÍÉè±¸ÒôÁ¿
+		// è·å¾—å£°éŸ³è®¾å¤‡å’Œè®¾å¤‡éŸ³é‡
 		AudioManager mgr = (AudioManager) mContext
 				.getSystemService(Context.AUDIO_SERVICE);
 		streamVolume = mgr.getStreamVolume(AudioManager.STREAM_MUSIC);
 	}
 
 	/***************************************************************
-	 * Function:loadSfx(); Parameters:null Returns:None. Description:¼ÓÔØÒôĞ§×ÊÔ´
+	 * Function:loadSfx(); Parameters:null Returns:None. Description:åŠ è½½éŸ³æ•ˆèµ„æº
 	 * Notes:none.
 	 ***************************************************************/
 	public void loadSfx(int raw, int ID) {
-		// °Ñ×ÊÔ´ÖĞµÄÒôĞ§¼ÓÔØµ½Ö¸¶¨µÄID(²¥·ÅµÄÊ±ºò¾Í¶ÔÓ¦µ½Õâ¸öID²¥·Å¾ÍĞĞÁË)
+		// æŠŠèµ„æºä¸­çš„éŸ³æ•ˆåŠ è½½åˆ°æŒ‡å®šçš„ID(æ’­æ”¾çš„æ—¶å€™å°±å¯¹åº”åˆ°è¿™ä¸ªIDæ’­æ”¾å°±è¡Œäº†)
 		soundPoolMap.put(ID, soundPool.load(mContext, raw, ID));
 	}
 
 	/***************************************************************
-	 * Function:play(); Parameters:sound:Òª²¥·ÅµÄÒôĞ§µÄID,loop:Ñ­»·´ÎÊı Returns:None.
-	 * Description:²¥·ÅÉùÒô Notes:none.
+	 * Function:play(); Parameters:sound:è¦æ’­æ”¾çš„éŸ³æ•ˆçš„ID,loop:å¾ªç¯æ¬¡æ•° Returns:None.
+	 * Description:æ’­æ”¾å£°éŸ³ Notes:none.
 	 ***************************************************************/
 	public void play(int sound, int uLoop) {
 		soundPool.play(soundPoolMap.get(sound), streamVolume, streamVolume, 1,

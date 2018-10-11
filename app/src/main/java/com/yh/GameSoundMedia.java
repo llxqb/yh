@@ -7,7 +7,7 @@ import android.content.Context;
 import android.media.MediaPlayer;
 
 /**
- * ĞèÒª·µ»ØÖµ
+ * éœ€è¦è¿”å›å€¼
  * 
  * @author gary
  * 

@@ -1,6 +1,5 @@
 package ll.to.syy;
 
-import ll.to.syy.R;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.widget.ImageView;
